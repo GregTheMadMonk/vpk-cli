@@ -10,4 +10,4 @@ RESOURCE=`$BASEDIR/vpk-cli -l "$1" | fzf`
 R_EXT=`echo "$RESOURCE" | cut -f1 -d\ `
 R_PATH=`echo "$RESOURCE" | cut -f2 -d\ `
 
-$BASEDIR/vpk-cli -i -o `basename "$R_PATH"`.$R_EXT "$1" "$R_PATH"
+$BASEDIR/vpk-cli -i -o `basename "$R_PATH"`.$R_EXT -e $R_EXT "$1" "$R_PATH"
