@@ -5,6 +5,8 @@ Doesn't really do anything else.
 ## Building
 **vpk-cli** uses a Makefile. To build, run `make`.
 
+For Arch Linux users, a PKGBUILD is provided.
+
 ## Usage
 
 ```
@@ -15,6 +17,8 @@ Usage: vpk-cli <dir_file> [-hlv] [<resource_path> [-i] [-o <filename]]
 	-i, --info - display resource info
 	-o, --output - specify output filename to save resource to
 ```
+
+There is also **vpk-xplore** script which uses **fzf** to make it easier to browse/extract resources.
 
 ## TODO
 [Valve Developer Community](https://developer.valvesoftware.com/wiki/VPK_File_Format#Notes) article describes skipping in the file format that is not considered by **vpk-cli**.
